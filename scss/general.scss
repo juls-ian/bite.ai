@@ -6,8 +6,8 @@
 
 html {
   /* root font size for rem 
-  62.5 of 16px (default so we override it)
-  is 10px*/
+  62.5 * 16px = 10px / 16 = 10px (default so we override it)
+  */
   font-size: 62.5%;
   // to disable scroll-x
   overflow-x: hidden;

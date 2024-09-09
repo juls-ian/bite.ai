@@ -241,48 +241,49 @@ if it's on a sticky state */
       box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06); }
     .section-meals .meal .meal-img {
       width: 100%; }
-    .section-meals .meal .meal-content {
-      padding: 3.2rem 4.8rem 4.8rem 4.8rem; }
-      .section-meals .meal .meal-content .meal-tags {
-        margin-bottom: 1.2rem;
-        display: flex;
-        gap: 0.4rem; }
-        .section-meals .meal .meal-content .meal-tags .tag {
-          display: inline-block;
-          padding: 0.4rem 0.8rem;
-          font-size: 1.2rem;
-          text-transform: uppercase;
-          color: #333;
-          border-radius: 100px;
-          font-weight: 600; }
-        .section-meals .meal .meal-content .meal-tags .tag--vegetarian {
-          background-color: #69db7c; }
-        .section-meals .meal .meal-content .meal-tags .tag--vegan {
-          background-color: #a9e34b; }
-        .section-meals .meal .meal-content .meal-tags .tag--paleo {
-          background-color: #ffd43b; }
-      .section-meals .meal .meal-content .meal-name {
-        font-size: 2.4rem;
+  .section-meals .meal-content {
+    padding: 3.2rem 4.8rem 4.8rem 4.8rem; }
+    .section-meals .meal-content .meal-tags {
+      margin-bottom: 1.2rem;
+      display: flex;
+      gap: 0.4rem; }
+      .section-meals .meal-content .meal-tags .tag {
+        display: inline-block;
+        padding: 0.4rem 0.8rem;
+        font-size: 1.2rem;
+        text-transform: uppercase;
         color: #333;
-        font-weight: 600;
-        margin-bottom: 3.2rem; }
-      .section-meals .meal .meal-content .meal-stats {
-        list-style: none;
+        border-radius: 100px;
+        font-weight: 600; }
+      .section-meals .meal-content .meal-tags .tag--vegetarian {
+        background-color: #69db7c; }
+      .section-meals .meal-content .meal-tags .tag--vegan {
+        background-color: #a9e34b; }
+      .section-meals .meal-content .meal-tags .tag--paleo {
+        background-color: #ffd43b; }
+    .section-meals .meal-content .meal-name {
+      font-size: 2.4rem;
+      color: #333;
+      font-weight: 600;
+      margin-bottom: 3.2rem; }
+    .section-meals .meal-content .meal-stats {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem; }
+      .section-meals .meal-content .meal-stats .meal-stat {
+        font-size: 1.8rem;
         display: flex;
-        flex-direction: column;
-        gap: 2rem; }
-        .section-meals .meal .meal-content .meal-stats .meal-stat {
-          font-size: 1.8rem;
-          display: flex;
-          align-items: center;
-          gap: 1.6rem; }
-        .section-meals .meal .meal-content .meal-stats .meal-icon {
-          width: 2.4rem;
-          height: 2.4rem;
-          color: #34d399; }
-  .section-meals .all-recipes {
-    text-align: center;
-    font-size: 1.8rem; }
+        align-items: center;
+        gap: 1.6rem; }
+      .section-meals .meal-content .meal-stats .meal-icon {
+        width: 2.4rem;
+        height: 2.4rem;
+        color: #34d399; }
+
+.all-recipes {
+  text-align: center;
+  font-size: 1.8rem; }
 
 /*************************/
 /* TESTIMONIALS SECTION */
@@ -292,93 +293,100 @@ if it's on a sticky state */
   display: grid;
   grid-template-columns: 55fr 45fr;
   align-items: center; }
-  .section-testimonials .testimonials-container {
-    padding: 9.6rem; }
-    .section-testimonials .testimonials-container .testimonials {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      row-gap: 4.8rem;
-      column-gap: 8rem; }
-      .section-testimonials .testimonials-container .testimonials .testimonial-img {
-        width: 6.4rem;
-        border-radius: 50%;
-        margin-bottom: 1.2rem; }
-      .section-testimonials .testimonials-container .testimonials .testimonial-text {
-        font-size: 1.8rem;
-        line-height: 1.8;
-        margin-bottom: 1.6rem; }
-      .section-testimonials .testimonials-container .testimonials .testimonial-person {
-        font-size: 1.6rem;
-        color: #6f6f6f; }
-  .section-testimonials .gallery {
+
+.testimonials-container {
+  padding: 9.6rem; }
+  .testimonials-container .testimonials {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.6rem;
-    padding: 2.1rem; }
-    .section-testimonials .gallery .gallery-item {
-      overflow: hidden; }
-      .section-testimonials .gallery .gallery-item img {
-        display: block;
-        width: 100%;
-        transition: all 0.4s; }
-        .section-testimonials .gallery .gallery-item img:hover {
-          transform: scale(1.1); }
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 4.8rem;
+    column-gap: 8rem; }
+    .testimonials-container .testimonials .testimonial-img {
+      width: 6.4rem;
+      border-radius: 50%;
+      margin-bottom: 1.2rem; }
+    .testimonials-container .testimonials .testimonial-text {
+      font-size: 1.8rem;
+      line-height: 1.8;
+      margin-bottom: 1.6rem; }
+    .testimonials-container .testimonials .testimonial-person {
+      font-size: 1.6rem;
+      color: #6f6f6f; }
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+  padding: 2.1rem; }
+  .gallery .gallery-item {
+    overflow: hidden; }
+    .gallery .gallery-item img {
+      display: block;
+      width: 100%;
+      transition: all 0.4s; }
+      .gallery .gallery-item img:hover {
+        transform: scale(1.1); }
 
 /*************************/
 /* PRICING SECTION */
 /*************************/
 .section-pricing {
   padding: 9.6rem 0; }
-  .section-pricing .pricing-plan {
-    border-radius: 11px;
-    padding: 4.8rem;
-    width: 75%; }
-  .section-pricing .pricing-plan--starter {
-    justify-self: end;
-    border: 2px solid #c2f2e0;
-    padding: 4.6rem; }
-  .section-pricing .pricing-plan--complete {
-    background-color: #c2f2e0;
-    position: relative;
-    overflow: hidden; }
-    .section-pricing .pricing-plan--complete::after {
-      content: "Best Value";
-      position: absolute;
-      top: 5%;
-      right: -19%;
-      text-transform: uppercase;
-      font-size: 1.4rem;
-      font-weight: 700;
-      color: #333;
-      background-color: #ffd43b;
-      padding: 0.8rem 8rem;
-      transform: rotate(40deg); }
-  .section-pricing .plan-header {
-    text-align: center;
-    margin-bottom: 4.8rem; }
-    .section-pricing .plan-header .plan-name {
-      color: #34d399;
-      font-weight: 600;
-      font-size: 2.1rem;
-      text-transform: uppercase;
-      letter-spacing: 0.75;
-      margin-bottom: 3.2rem; }
-    .section-pricing .plan-header .plan-price {
-      font-size: 6.2rem;
-      font-weight: 600;
-      color: #333;
-      margin-bottom: 1.6rem; }
-      .section-pricing .plan-header .plan-price span {
-        font-size: 3rem;
-        font-weight: 500;
-        margin-right: 0.8rem; }
-    .section-pricing .plan-header .plan-text {
-      font-size: 1.6rem;
-      line-height: 1.6;
-      color: #6f6f6f; }
-  .section-pricing .plan-sign-up {
-    text-align: center;
-    margin-top: 4.8rem; }
+
+.pricing-plan {
+  border-radius: 11px;
+  padding: 4.8rem;
+  width: 75%; }
+
+.pricing-plan--starter {
+  justify-self: end;
+  border: 2px solid #c2f2e0;
+  padding: 4.6rem; }
+
+.pricing-plan--complete {
+  background-color: #c2f2e0;
+  position: relative;
+  overflow: hidden; }
+  .pricing-plan--complete::after {
+    content: "Best Value";
+    position: absolute;
+    top: 5%;
+    right: -19%;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #333;
+    background-color: #ffd43b;
+    padding: 0.8rem 8rem;
+    transform: rotate(40deg); }
+
+.plan-header {
+  text-align: center;
+  margin-bottom: 4.8rem; }
+  .plan-header .plan-name {
+    color: #34d399;
+    font-weight: 600;
+    font-size: 2.1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.75;
+    margin-bottom: 3.2rem; }
+  .plan-header .plan-price {
+    font-size: 6.2rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 1.6rem; }
+    .plan-header .plan-price span {
+      font-size: 3rem;
+      font-weight: 500;
+      margin-right: 0.8rem; }
+  .plan-header .plan-text {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    color: #6f6f6f; }
+
+.plan-sign-up {
+  text-align: center;
+  margin-top: 4.8rem; }
 
 .plan-details {
   font-size: 1.6rem;
@@ -412,56 +420,57 @@ if it's on a sticky state */
 /*************************/
 .section-cta {
   padding: 4.8rem 0 12.8rem; }
-  .section-cta .cta {
+
+.cta {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  background-color: #34d399;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+  border-radius: 11px;
+  background-image: linear-gradient(to right bottom, #5ddcad, #34d399);
+  overflow: hidden;
+  margin-bottom: 5.6rem; }
+  .cta .cta-text-box {
+    padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+    color: #103f2e; }
+    .cta .cta-text-box .heading-secondary {
+      color: #103f2e;
+      margin-bottom: 2.3rem; }
+    .cta .cta-text-box .cta-text {
+      font-size: 1.8rem;
+      line-height: 1.8;
+      margin-bottom: 4.8rem; }
+  .cta .cta-form {
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    background-color: #34d399;
-    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
-    border-radius: 11px;
-    background-image: linear-gradient(to right bottom, #5ddcad, #34d399);
-    overflow: hidden;
-    margin-bottom: 5.6rem; }
-    .section-cta .cta .cta-text-box {
-      padding: 4.8rem 6.4rem 6.4rem 6.4rem;
-      color: #103f2e; }
-      .section-cta .cta .cta-text-box .heading-secondary {
-        color: #103f2e;
-        margin-bottom: 2.3rem; }
-      .section-cta .cta .cta-text-box .cta-text {
-        font-size: 1.8rem;
-        line-height: 1.8;
-        margin-bottom: 4.8rem; }
-    .section-cta .cta .cta-form {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      column-gap: 3.2rem;
-      row-gap: 2.4rem; }
-      .section-cta .cta .cta-form label {
-        display: block;
-        font-size: 1.6rem;
-        font-weight: 500;
-        margin-bottom: 1.2rem; }
-      .section-cta .cta .cta-form input,
-      .section-cta .cta .cta-form select {
-        width: 100%;
-        padding: 1.2rem;
-        font-size: 1.8rem;
-        font-family: inherit;
-        color: inherit;
-        border: none;
-        background-color: #c2f2e0;
-        border-radius: 9px;
-        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); }
-        .section-cta .cta .cta-form input::placeholder,
-        .section-cta .cta .cta-form select::placeholder {
-          color: #333; }
-    .section-cta .cta .cta-img-box {
-      background-image: linear-gradient(to right bottom, rgba(181, 239, 218, 0.3), rgba(181, 239, 218, 0.3)), url("../img/eating.jpg");
-      background-size: cover;
-      background-position: center; }
-    .section-cta .cta *:focus {
-      outline: none;
-      box-shadow: 0 0 0 0.8rem rgba(179, 235, 215, 0.5); }
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 3.2rem;
+    row-gap: 2.4rem; }
+    .cta .cta-form label {
+      display: block;
+      font-size: 1.6rem;
+      font-weight: 500;
+      margin-bottom: 1.2rem; }
+    .cta .cta-form input,
+    .cta .cta-form select {
+      width: 100%;
+      padding: 1.2rem;
+      font-size: 1.8rem;
+      font-family: inherit;
+      color: inherit;
+      border: none;
+      background-color: #c2f2e0;
+      border-radius: 9px;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); }
+      .cta .cta-form input::placeholder,
+      .cta .cta-form select::placeholder {
+        color: #333; }
+  .cta .cta-img-box {
+    background-image: linear-gradient(to right bottom, rgba(181, 239, 218, 0.3), rgba(181, 239, 218, 0.3)), url("../img/eating.jpg");
+    background-size: cover;
+    background-position: center; }
+  .cta *:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.8rem rgba(179, 235, 215, 0.5); }
 
 /*************************/
 /* FOOTER */

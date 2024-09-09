@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "watch:scss": "concurrently \"node-sass -w scss/style.scss css/style.css\" \"node-sass -w scss/general.scss css/general.css\" \"node-sass -w scss/media-queries.scss css/media-queries.css\""
+    "compile:scss": "concurrently \"node-sass -w scss/style.scss css/style.css\" \"node-sass -w scss/general.scss css/general.css\" \"node-sass -w scss/media-queries.scss css/media-queries.css\""
   },
   "dependencies": {
     "node-sass": "^9.0.0",
