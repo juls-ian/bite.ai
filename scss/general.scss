@@ -1,253 +1,253 @@
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
 
 html {
-  /* root font size for rem 
+	/* root font size for rem 
   62.5 * 16px = 10px / 16 = 10px (default so we override it)
   */
-  font-size: 62.5%;
-  // to disable scroll-x
-  overflow-x: hidden;
+	font-size: 62.5%;
+	// to disable scroll-x
+	overflow-x: hidden;
 
-  // Scroll effect
-  scroll-snap-type: y mandatory;
-  scroll-behavior: smooth;
-  ::-webkit-scrollbar {
-    display: none;
-  }
+	// Scroll effect
+	scroll-snap-type: y mandatory;
+	scroll-behavior: smooth;
+	::-webkit-scrollbar {
+		display: none;
+	}
 }
 
 body {
-  font-family: "Rubik", sans-serif;
-  line-height: 1;
-  font-weight: 400;
-  color: #555;
-  width: 100%;
-  // to disable scroll-x
-  overflow-x: hidden;
+	font-family: "Rubik", sans-serif;
+	line-height: 1;
+	font-weight: 400;
+	color: #555;
+	width: 100%;
+	// to disable scroll-x
+	overflow-x: hidden;
 }
 
 // ALL REUSABLE CLASSES
 
 *:focus {
-  outline: none;
-  box-shadow: 0 0 0 0.8rem rgba(49, 208, 150, 0.5);
+	outline: none;
+	box-shadow: 0 0 0 0.8rem rgba(49, 208, 150, 0.5);
 }
 
 .logo {
-  height: 2.2rem;
+	height: 2.2rem;
 }
 
 // reusable grid
 .grid {
-  display: grid;
-  column-gap: 6.4rem;
-  row-gap: 9.6rem;
-  //  margin-bottom: 9.6rem;
+	display: grid;
+	column-gap: 6.4rem;
+	row-gap: 9.6rem;
+	//  margin-bottom: 9.6rem;
 
-  /*between how it works and 
+	/*between how it works and 
   meals section margin-bottom fix*/
 
-  /*
+	/*
   &:last-child {
     margin-bottom: 0 !important;
   }
   */
 
-  /*adds margin-bottom to the first grid in section-pricing */
-  &:not(:last-child) {
-    margin-bottom: 9.6rem;
-  }
+	/*adds margin-bottom to the first grid in section-pricing */
+	&:not(:last-child) {
+		margin-bottom: 9.6rem;
+	}
 }
 
 .grid--2-cols {
-  grid-template-columns: repeat(2, 1fr); //same as writing 1fr 1fr
+	grid-template-columns: repeat(2, 1fr); //same as writing 1fr 1fr
 }
 
 .grid--3-cols {
-  grid-template-columns: repeat(3, 1fr); //same as writing 1fr 1fr
+	grid-template-columns: repeat(3, 1fr); //same as writing 1fr 1fr
 }
 
 .grid--4-cols {
-  grid-template-columns: repeat(4, 1fr); //same as writing 1fr 1fr
+	grid-template-columns: repeat(4, 1fr); //same as writing 1fr 1fr
 }
 
 .grid--5-cols {
-  grid-template-columns: repeat(5, 1fr); //same as writing 1fr 1fr
+	grid-template-columns: repeat(5, 1fr); //same as writing 1fr 1fr
 }
 
 .grid--center-v {
-  align-items: center;
+	align-items: center;
 }
 
 .grid--footer {
-  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+	grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
 }
 
 /* COMPONENTS */
 
 .heading-primary,
 .heading-secondary {
-  font-weight: 700;
-  color: #333;
-  letter-spacing: -0.5px;
+	font-weight: 700;
+	color: #333;
+	letter-spacing: -0.5px;
 }
 
 .heading-primary {
-  font-size: 5.2rem;
-  line-height: 1.05;
-  margin-bottom: 3.2rem;
+	font-size: 5.2rem;
+	line-height: 1.05;
+	margin-bottom: 3.2rem;
 }
 
 .heading-secondary {
-  font-size: 4.4rem;
-  line-height: 1.2;
-  margin-bottom: 9.6rem;
+	font-size: 4.4rem;
+	line-height: 1.2;
+	margin-bottom: 9.6rem;
 }
 
 .heading-tertiary {
-  font-size: 3rem;
-  line-height: 1.2;
-  margin-bottom: 3.2rem;
+	font-size: 3rem;
+	line-height: 1.2;
+	margin-bottom: 3.2rem;
 }
 
 // span is an inline element
 .subheading {
-  display: block;
-  font-weight: 500;
-  color: #34d399;
-  font-size: 1.6rem;
-  text-transform: uppercase;
-  margin-bottom: 1.6rem;
-  letter-spacing: 0.75px;
+	display: block;
+	font-weight: 500;
+	color: #34d399;
+	font-size: 1.6rem;
+	text-transform: uppercase;
+	margin-bottom: 1.6rem;
+	letter-spacing: 0.75px;
 }
 
 .container {
-  // another convention is 1140px
-  max-width: 120rem;
-  margin: 0 auto;
-  padding: 0 3.2rem;
+	// another convention is 1140px
+	max-width: 120rem;
+	margin: 0 auto;
+	padding: 0 3.2rem;
 }
 
 /* original buttons state */
 .btn,
 .btn:link,
 .btn:visited {
-  display: inline-block;
-  color: #fff;
-  text-decoration: none;
-  font-size: 2rem;
-  padding: 1.6rem 3.2rem;
-  border-radius: 9px;
-  font-weight: 600;
-  /* always put transition in original state */
-  transition: all 0.3s;
+	display: inline-block;
+	color: #fff;
+	text-decoration: none;
+	font-size: 2rem;
+	padding: 1.6rem 3.2rem;
+	border-radius: 9px;
+	font-weight: 600;
+	/* always put transition in original state */
+	transition: all 0.3s;
 
-  /* for .btn only */
+	/* for .btn only */
 
-  border: none;
-  cursor: pointer;
-  font-family: inherit;
+	border: none;
+	cursor: pointer;
+	font-family: inherit;
 }
 
 .btn--form {
-  background-color: #103f2e;
-  color: #2fbe8a;
-  /*because this a grid item we use align-self
+	background-color: #103f2e;
+	color: #2fbe8a;
+	/*because this a grid item we use align-self
   to vertically align it*/
-  align-self: end;
+	align-self: end;
 
-  padding: 1.2rem;
+	padding: 1.2rem;
 
-  &:hover {
-    background-color: #fff;
-    color: #555;
-  }
+	&:hover {
+		background-color: #fff;
+		color: #555;
+	}
 }
 
 .btn--full:link,
 .btn--full:visited {
-  background-color: #34d399;
-  color: #fff;
+	background-color: #34d399;
+	color: #fff;
 }
 
 .btn--outline:link,
 .btn--outline:visited {
-  background-color: #fff;
-  color: #555;
+	background-color: #fff;
+	color: #555;
 }
 
 /* HOVER & ACTIVE */
 .btn--full:hover,
 .btn--full:active {
-  background-color: #2fbe8a;
+	background-color: #2fbe8a;
 }
 
 .btn--outline:hover,
 .btn--outline:active {
-  background-color: #c2f2e0;
-  /* border: 3px solid white; ~ adds border outside */
-  /* TRICK: to add inside border */
-  box-shadow: inset 0 0 0 3px #fff;
+	background-color: #c2f2e0;
+	/* border: 3px solid white; ~ adds border outside */
+	/* TRICK: to add inside border */
+	box-shadow: inset 0 0 0 3px #fff;
 }
 
 .link:link,
 .link:visited {
-  display: inline-block;
-  color: #34d399;
-  text-decoration: none;
-  border-bottom: 1px solid currentColor;
-  padding-bottom: 2px;
-  transition: all 0.3s;
+	display: inline-block;
+	color: #34d399;
+	text-decoration: none;
+	border-bottom: 1px solid currentColor;
+	padding-bottom: 2px;
+	transition: all 0.3s;
 }
 
 .link:hover,
 .link:active {
-  color: #2fbe8a;
-  /*instead of using border-bottom: none, use this:*/
-  // border-bottom: 1px solid transparent;
-  border-bottom: none;
+	color: #2fbe8a;
+	/*instead of using border-bottom: none, use this:*/
+	// border-bottom: 1px solid transparent;
+	border-bottom: none;
 }
 
 .list {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 1.6rem;
-  line-height: 1.2;
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	gap: 1.6rem;
+	line-height: 1.2;
 
-  .list-item {
-    font-size: 1.8rem;
-    display: flex;
-    align-items: center;
-    gap: 1.6rem;
+	.list-item {
+		font-size: 1.8rem;
+		display: flex;
+		align-items: center;
+		gap: 1.6rem;
 
-    .list-icon {
-      width: 3rem;
-      height: 3rem;
-      color: #34d399;
-    }
-  }
+		.list-icon {
+			width: 3rem;
+			height: 3rem;
+			color: #34d399;
+		}
+	}
 }
 
 /* HELPER CLASSES */
 .margin-right-sm {
-  /* we can do also do this by putting the 2 anchor display flex
+	/* we can do also do this by putting the 2 anchor display flex
         or we can put it in the btn */
-  margin-right: 2.6rem !important;
+	margin-right: 2.6rem !important;
 }
 
 .margin-bottom-md {
-  margin-bottom: 4.8rem !important ;
+	margin-bottom: 4.8rem !important ;
 }
 
 .center-text {
-  text-align: center;
+	text-align: center;
 }
 
 strong {
-  font-weight: 500;
+	font-weight: 500;
 }
